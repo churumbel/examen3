@@ -4,8 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class CCuentaTest {
+import examen3refactorizado.CCuenta;
 
+class CCuentaTest {
+	/**
+	 * Al extraer el método de operativa de cuenta y encapsular los atributos, ahora los test no funcionan. 
+	 * Para solucionarlo abría que utilizar instance.getSaldo() porque ahora dSaldo no es visible.
+	 */
 	//Camino 1
 	@Test
     public void testIngresar() {
